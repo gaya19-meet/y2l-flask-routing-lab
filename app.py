@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home_page():
-	pets_list = "pets list"#["cat" , "dog" , "unicorn" , "panda" , "bear"]
+	pets_list = ["cat" , "dog" , "unicorn" , "panda" , "bear"]
 	return render_template("home.html" , pets=pets_list)
 
 
